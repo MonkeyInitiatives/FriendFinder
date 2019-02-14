@@ -1,7 +1,7 @@
 var friendsdata = [
     {
         "name":"Edward Van Helgen",
-        "photo":"./images/banjo.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland15-1.gif",
         "scores":[
             1,
             1,
@@ -17,55 +17,55 @@ var friendsdata = [
     },
     {
         "name":"Captain Blondebeard",
-        "photo":"./images/Blondebeard.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland4.gif",
         "scores":[
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
         ]
     },
     {
         "name":"Cutthroat Bill",
-        "photo":"./images/CutthroatBill.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland3.gif",
         "scores":[
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
         ]
     },
     {
         "name":"Dinghy Dog",
-        "photo":"./images/DinghyDog.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland10.gif",
         "scores":[
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
         ]
     },
     {
         "name":"Elaine",
-        "photo":"./images/Elaine.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland.gif",
         "scores":[
             5,
             5,
@@ -81,130 +81,130 @@ var friendsdata = [
     },
     {
         "name":"Lemonhead",
-        "photo":"./images/Lemonhead.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland14.gif",
         "scores":[
+            1,
+            2,
+            3,
+            4,
             5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            4,
+            3,
+            2,
+            1,
+            1
         ]
     },
     {
         "name":"Slappy",
-        "photo":"./images/Slappy.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland2.gif",
         "scores":[
+            1,
+            2,
+            3,
+            4,
             5,
             5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            4,
+            3,
+            2,
+            1
         ]
     },
     {
         "name":"Stan",
-        "photo":"./images/Stan.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland1.gif",
         "scores":[
             5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
+            4,
+            3,
+            2,
+            1,
+            2,
+            3,
+            4,
             5,
             5
         ]
     },
     {
         "name":"Three Headed Monkey",
-        "photo":"./images/ThreeHeadedMonkey.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland6.gif",
         "scores":[
             5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
+            4,
+            3,
+            2,
+            1,
+            1,
+            2,
+            3,
+            4,
             5
         ]
     },
     {
         "name":"Wally",
-        "photo":"./images/Wally.gif",
+        "photo":"http://indigo.ie/~rdshiels/monkey/cmi/wally.gif",
         "scores":[
             5,
             5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            4,
+            4,
+            3,
+            3,
+            2,
+            2,
+            1,
+            1
         ]
     },
     {
         "name":"LeChuck",
-        "photo":"./images/LeChuck.png",
+        "photo":"http://gakuran.com/files/Famegame/images/Monkey%20Island/LeChuck3.gif",
         "scores":[
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            4,
             5,
             5
         ]
     },
     {
         "name":"Voodoo Lady",
-        "photo":"./images/VoodooLady.png",
+        "photo":"http://gakuran.com/files/Famegame/images/Monkey%20Island/VoodooLady3.gif",
         "scores":[
             5,
+            3,
+            1,
+            1,
+            3,
             5,
             5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5
+            3,
+            1,
+            1
         ]
     },
     {
         "name":"Guybrush Threepwood",
-        "photo":"./images/Guybrush.gif",
+        "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland11.gif",
         "scores":[
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4,
+            2,
+            4
         ]
     }
 ];

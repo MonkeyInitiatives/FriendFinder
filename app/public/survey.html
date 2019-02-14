@@ -20,6 +20,9 @@
         .modal-body{
             display: block;
         }
+        img{
+            max-height: 160px;
+        }
     </style>
 </head>
 <body>
@@ -160,9 +163,8 @@
     <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal" data-target="#results-modal"><i class="fa fa-check-circle" aria-hidden="true"></i>
         Submit</button>
     <div class="container">
-        <p><a href="/api/friendsdata">API Friends List</a> | 
+        <p><a href="/api/friendsdata">API Friends List</a> | <a href="https://github.com/MonkeyInitiatives/FriendFinder">GitHub Repo</a></p>
     </div>
-
 
     <div class="modal fade" tabindex="-1" role="dialog" id="results-modal">
         <div class="modal-dialog" role="document">
@@ -199,6 +201,8 @@ $( "#submit" ).click(function() {
     $.post("/api/friendsdata", newFriend)
     .then(function(data) {
         console.log(data);
+        $("#best-match").empty();
+        $("#best-image").empty();
         $("#best-match").text(data.name+"\n");
         $("#best-image").append('<img id="theImg" src='+data.photo+' />');
         });
