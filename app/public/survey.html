@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder | Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+    
+    <style>
+        .modal-body{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form">
+        <h1>Survey Questions</h1>
+        <h2>About You</h2>
+        <div class="form-group">
+            <label for="exampleName">Name (Required)</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="pwd">Link to Photo Image (Required)</label>
+            <input type="text" class="form-control" id="photolink" required>
+        </div>
+        <h3>Question 1</h3>
+        <div class="form-group">
+            <label for="inputState">Your mind is always buzzing with unexplored ideas and plans.</label>
+            <select id="inputState1" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 2</h3>
+        <div class="form-group">
+            <label for="inputState">Generally speaking, you rely more on your experience than your imagination.</label>
+            <select id="inputState2" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 3</h3>
+        <div class="form-group">
+            <label for="inputState">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+            <select id="inputState3" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 4</h3>
+        <div class="form-group">
+            <label for="inputState">You rarely do something just out of sheer curiosity.</label>
+            <select id="inputState4" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 5</h3>
+        <div class="form-group">
+            <label for="inputState">People can rarely upset you.</label>
+            <select id="inputState5" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 6</h3>
+        <div class="form-group">
+            <label for="inputState">It is often difficult for you to relate to other people’s feelings.</label>
+            <select id="inputState6" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 7</h3>
+        <div class="form-group">
+            <label for="inputState">In a discussion, truth should be more important than people’s sensitivities.</label>
+            <select id="inputState7" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 8</h3>
+        <div class="form-group">
+            <label for="inputState">You rarely get carried away by fantasies and ideas.</label>
+            <select id="inputState8" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 9</h3>
+        <div class="form-group">
+            <label for="inputState">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+            <select id="inputState9" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>Question 10</h3>
+        <div class="form-group">
+            <label for="inputState">You feel more energetic after spending time with a group of people.</label>
+            <select id="inputState10" class="form-control" style="width: 155px;" required>
+                <option selected>Select an Option</option>
+                <option>1 (Strongly Disagree)</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5 (Strongly Agree)</option>
+            </select>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal" data-target="#results-modal"><i class="fa fa-check-circle" aria-hidden="true"></i>
+        Submit</button>
+    <div class="container">
+        <p><a href="/api/friendsdata">API Friends List</a> | 
+    </div>
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="results-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Best Match</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="best-match"></h3>
+                </div>
+                <div class="modal-body">
+                    <span id="best-image"></span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<script>
+
+
+$( "#submit" ).click(function() {
+    event.preventDefault();
+    var newFriend = {
+			name: $('#name').val().trim(),
+			photo: $('#photolink').val().trim(),
+			scores: [$('#inputState1').val(),$('#inputState2').val(),$('#inputState3').val(),$('#inputState4').val(),$('#inputState5').val(),$('#inputState6').val(),$('#inputState7').val(),$('#inputState8').val(),$('#inputState9').val(),$('#inputState10').val()]
+        };
+    $.post("/api/friendsdata", newFriend)
+    .then(function(data) {
+        console.log(data);
+        $("#best-match").text(data.name+"\n");
+        $("#best-image").append('<img id="theImg" src='+data.photo+' />');
+        });
+});
+
+</script>
+</body>
+</html>
