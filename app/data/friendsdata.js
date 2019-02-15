@@ -3,31 +3,31 @@ var friendsdata = [
         "name":"Edward Van Helgen",
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland15-1.gif",
         "scores":[
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
+            5,
+            3,
+            4,
+            4,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4
         ]
     },
     {
         "name":"Captain Blondebeard",
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland4.gif",
         "scores":[
+            3,
             2,
             2,
             2,
+            3,
             2,
-            2,
-            2,
-            2,
-            2,
-            2,
+            4,
+            4,
+            1,
             2
         ]
     },
@@ -35,47 +35,47 @@ var friendsdata = [
         "name":"Cutthroat Bill",
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland3.gif",
         "scores":[
+            5,
+            4,
+            1,
+            4,
+            1,
+            4,
             3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3,
-            3
+            1,
+            2,
+            4
         ]
     },
     {
         "name":"Dinghy Dog",
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland10.gif",
         "scores":[
+            1,
             4,
+            3,
+            2,
+            3,
+            5,
+            1,
             4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4,
-            4
+            3,
+            2
         ]
     },
     {
         "name":"Elaine",
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland.gif",
         "scores":[
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
-            5,
+            4,
+            4,
+            2,
+            4,
+            2,
+            3,
+            3,
+            3,
+            4,
             5
         ]
     },
@@ -84,14 +84,14 @@ var friendsdata = [
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland14.gif",
         "scores":[
             1,
-            2,
-            3,
+            1,
             4,
-            5,
+            1,
             4,
-            3,
             2,
             1,
+            4,
+            2,
             1
         ]
     },
@@ -100,14 +100,14 @@ var friendsdata = [
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland2.gif",
         "scores":[
             1,
-            2,
-            3,
-            4,
+            1,
             5,
+            1,
+            5,
+            2,
+            1,
             5,
             4,
-            3,
-            2,
             1
         ]
     },
@@ -115,63 +115,63 @@ var friendsdata = [
         "name":"Stan",
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland1.gif",
         "scores":[
-            5,
-            4,
+            1,
             3,
-            2,
+            3,
             1,
             2,
-            3,
-            4,
             5,
-            5
+            3,
+            3,
+            3,
+            4
         ]
     },
     {
         "name":"Three Headed Monkey",
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland6.gif",
         "scores":[
-            5,
-            4,
             3,
-            2,
-            1,
+            3,
             1,
             2,
             3,
-            4,
-            5
+            3,
+            1,
+            3,
+            1,
+            3
         ]
     },
     {
         "name":"Wally",
         "photo":"http://indigo.ie/~rdshiels/monkey/cmi/wally.gif",
         "scores":[
-            5,
-            5,
-            4,
+            2,
+            2,
             4,
             3,
             3,
             2,
+            5,
             2,
-            1,
-            1
+            2,
+            3
         ]
     },
     {
         "name":"LeChuck",
         "photo":"http://gakuran.com/files/Famegame/images/Monkey%20Island/LeChuck3.gif",
         "scores":[
-            1,
-            1,
-            2,
-            2,
-            3,
-            3,
             4,
             4,
+            2,
             5,
+            5,
+            5,
+            2,
+            1,
+            1,
             5
         ]
     },
@@ -179,15 +179,15 @@ var friendsdata = [
         "name":"Voodoo Lady",
         "photo":"http://gakuran.com/files/Famegame/images/Monkey%20Island/VoodooLady3.gif",
         "scores":[
-            5,
-            3,
             1,
-            1,
-            3,
+            2,
             5,
-            5,
-            3,
             1,
+            4,
+            1,
+            4,
+            4,
+            3,
             1
         ]
     },
@@ -195,16 +195,16 @@ var friendsdata = [
         "name":"Guybrush Threepwood",
         "photo":"https://www.emugifs.net/wp-content/uploads/2018/05/thecurseofmonkeyisland11.gif",
         "scores":[
+            5,
+            5,
+            3,
+            5,
+            1,
+            1,
+            3,
             2,
-            4,
-            2,
-            4,
-            2,
-            4,
-            2,
-            4,
-            2,
-            4
+            5,
+            5
         ]
     }
 ];
