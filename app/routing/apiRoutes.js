@@ -9,7 +9,7 @@ module.exports = function(app) {
         newfriend.photo = newfriend.photo.trim();
         newfriend.scores = newfriend.scores;
     
-        console.log(newfriend);
+        // console.log(newfriend);
 
         var differentScore = 100;
         var matchIndex = 0;
@@ -23,7 +23,7 @@ module.exports = function(app) {
                 differentScore = currentScore;
                 matchIndex = j;
             }
-            console.log(friendsdata[j].photo);
+            // console.log(friendsdata[j].photo);
         }
 
 

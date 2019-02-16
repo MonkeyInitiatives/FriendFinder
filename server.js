@@ -8,9 +8,14 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
+var publicDir = require('path').join(__dirname,'/app/public');
+console.log(publicDir);
+app.use(express.static(publicDir));
+
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 
 require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);

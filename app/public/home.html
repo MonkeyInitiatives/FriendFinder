@@ -15,11 +15,38 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
     crossorigin="anonymous"></script>
+
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+        }
+        #myLogo{
+            float: left;
+        }
+        .jumbotron{
+            background-color: #282E34;
+            color: #ddd;
+        }
+        .btn{
+            background-color: #227959;
+            color: #ddd;
+        }
+    </style>
 </head>
 <body>
+    <audio id="player" autoplay loop><source src="audio/backgroundaudio.mp3" type="audio/mp3"></audio>
+    <video autoplay muted loop id="myVideo">
+        <source src="/video/backgroundvideo.mp4" type="video/mp4">
+    </video>
     <div class="container">
         <div class="jumbotron">
-            <h1 class="display-4">Pirate Finder</h1>
+                <!-- <img src="/images/logo.png" alt="three-headed-monkey-logo" id="myLogo"> -->
+                <h1 class="display-4"><img src="/images/logo.png" alt="three-headed-monkey-logo" id="myLogo" style="height: 1em;">Pirate Finder</h1>
             <hr class="my-4">
             <p class="lead">Answer a few basic questions.</p>
             <p class="lead">Then find the pirate with the greatest compatibility!</p>

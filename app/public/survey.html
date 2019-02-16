@@ -17,18 +17,39 @@
     crossorigin="anonymous"></script>
     
     <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+        }
         .modal-body{
             display: block;
         }
         img{
             max-height: 160px;
         }
+        .form{
+            background-color: #282E34;
+            color: #ddd;
+            padding: 20px;
+        }
+        .btn{
+            background-color: #227959;
+            color: #ddd;
+        }
+
     </style>
 </head>
 <body>
-
+<audio id="player" autoplay loop><source src="audio/backgroundaudio.mp3" type="audio/mp3"></audio>
+<video autoplay muted loop id="myVideo">
+    <source src="/video/backgroundvideo.mp4" type="video/mp4">
+</video>
 <div class="container">
-    <div class="form">
+    <form class="form">
         <h1>Survey Questions</h1>
         <h2>About You</h2>
         <div class="form-group">
@@ -159,9 +180,9 @@
                 <option>5</option>
             </select>
         </div>
-    </div>
-    <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal" data-target="#results-modal"><i class="fa fa-check-circle" aria-hidden="true"></i>
-        Submit</button>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal" data-target="#results-modal"><i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+    </form>
     <div class="container">
         <p><a href="/api/friendsdata">API Pirate List</a> | <a href="https://github.com/MonkeyInitiatives/FriendFinder">GitHub Repo</a></p>
     </div>
@@ -190,22 +211,52 @@
 </div>    
 <script>
 
-
 $( "#submit" ).click(function() {
     event.preventDefault();
-    var newFriend = {
-			name: $('#name').val().trim(),
-			photo: $('#photolink').val().trim(),
-			scores: [$('#inputState1').val(),$('#inputState2').val(),$('#inputState3').val(),$('#inputState4').val(),$('#inputState5').val(),$('#inputState6').val(),$('#inputState7').val(),$('#inputState8').val(),$('#inputState9').val(),$('#inputState10').val()]
-        };
-    $.post("/api/friendsdata", newFriend)
-    .then(function(data) {
-        console.log(data);
+    var falseFlag = false;
+    if($('#name').val().trim()==="")
+    {
+        falseFlag=true;
+    }
+    if($('#photolink').val().trim()==="")
+    {
+        falseFlag=true;
+    }
+    if($('#photolink').val().trim().startsWith("http://")===false)
+    {
+        falseFlag=true;
+    }
+    if($('#photolink').val().trim().match(/\.(jpeg|jpg|gif|png)$/) == null)
+    {
+        falseFlag=true;
+    }
+    
+    for(var i = 1; i<11; i++){
+        if($('#inputState'+i).val()==="Select an Option"){
+            falseFlag=true;
+        }
+    }
+    if(falseFlag){
         $("#best-match").empty();
         $("#best-image").empty();
-        $("#best-match").text(data.name+"\n");
-        $("#best-image").append('<img id="theImg" src='+data.photo+' />');
-        });
+        $("#best-match").text("Please fill out the entire form correctly!");
+    }
+    else{
+        var newFriend = {
+                name: $('#name').val().trim(),
+                photo: $('#photolink').val().trim(),
+                scores: [$('#inputState1').val(),$('#inputState2').val(),$('#inputState3').val(),$('#inputState4').val(),$('#inputState5').val(),$('#inputState6').val(),$('#inputState7').val(),$('#inputState8').val(),$('#inputState9').val(),$('#inputState10').val()]
+            };
+            console.log(newFriend);
+        $.post("/api/friendsdata", newFriend)
+        .then(function(data) {
+            console.log(data);
+            $("#best-match").empty();
+            $("#best-image").empty();
+            $("#best-match").text(data.name+"\n");
+            $("#best-image").append('<img id="theImg" src='+data.photo+' />');
+            });
+    }
 });
 
 </script>
