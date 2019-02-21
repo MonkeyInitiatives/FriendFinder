@@ -180,7 +180,7 @@
                 <option>5 (Strongly Agree)</option>
             </select>
         </div>
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-toggle="modal" data-target="#results-modal"><i class="fa fa-check-circle" aria-hidden="true"></i>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-target="#results-modal"><i class="fa fa-check-circle" aria-hidden="true"></i>
             Submit</button>
     </form>
     <div class="container">
@@ -219,10 +219,6 @@ $( "#submit" ).click(function() {
         falseFlag=true;
     }
     if($('#photolink').val().trim()==="")
-    {
-        falseFlag=true;
-    }
-    if($('#photolink').val().trim().startsWith("http://")===false)
     {
         falseFlag=true;
     }
