@@ -49,7 +49,7 @@
     <source src="/video/backgroundvideo.mp4" type="video/mp4">
 </video>
 <div class="container">
-    <form class="form">
+    <div class="form">
         <h1>Survey Questions</h1>
         <h2>About You</h2>
         <div class="form-group">
@@ -182,7 +182,7 @@
         </div>
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit" data-target="#results-modal"><i class="fa fa-check-circle" aria-hidden="true"></i>
             Submit</button>
-    </form>
+    </div>
     <div class="container">
         <p><a href="/api/friendsdata">API Pirate List</a> | <a href="https://github.com/MonkeyInitiatives/FriendFinder">GitHub Repo</a></p>
     </div>
@@ -236,6 +236,7 @@ $( "#submit" ).click(function() {
         $("#best-match").empty();
         $("#best-image").empty();
         $("#best-match").text("Please fill out the entire form correctly!");
+        $('#results-modal').modal('show');
     }
     else{
         var newFriend = {
@@ -243,14 +244,14 @@ $( "#submit" ).click(function() {
                 photo: $('#photolink').val().trim(),
                 scores: [parseInt($('#inputState1').val()[0]),parseInt($('#inputState2').val()[0]),parseInt($('#inputState3').val()[0]),parseInt($('#inputState4').val()[0]),parseInt($('#inputState5').val()[0]),parseInt($('#inputState6').val()[0]),parseInt($('#inputState7').val()[0]),parseInt($('#inputState8').val()[0]),parseInt($('#inputState9').val()[0]),parseInt($('#inputState10').val()[0])]
             };
-            console.log(newFriend);
+            // console.log(newFriend);
         $.post("/api/friendsdata", newFriend)
         .then(function(data) {
-            console.log(data);
             $("#best-match").empty();
             $("#best-image").empty();
             $("#best-match").text(data.name+"\n");
             $("#best-image").append('<img id="theImg" src='+data.photo+' />');
+            $('#results-modal').modal('show');
             });
     }
 });
